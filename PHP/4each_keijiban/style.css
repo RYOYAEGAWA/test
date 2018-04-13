@@ -1,0 +1,195 @@
+header img{
+    height:50px;
+    width:200px;
+}
+
+.contents{
+    left:0;
+    top:70px;
+    height:30px;
+    width:100%;
+    background-color: black;
+    line-height: 30px;
+}
+
+
+
+li{
+    float:left;
+    list-style: none; 
+    color:white;
+    font-size: 12px;
+    padding-right: 30px;
+    margin:0px
+}
+
+
+main{
+    top:130px;
+    left:20px;
+    width:100%;
+}
+
+
+.left{
+    float:left;
+    width:60%;
+    /*height:800px;*/
+    
+  
+}
+
+.left h1{
+    font-size: 15px;
+    border-left:3px solid black;
+    border-bottom:3px solid black;
+    padding-left:3px;
+    padding-top:0px;
+    
+}
+
+/*--------------ここから入力フォームのやつ-----------------*/
+.left h2{
+    margin:0 auto;
+    margin-top:30px;
+    margin-bottom:20px;
+    border-left:4px red solid;
+    background-color: #f1f1f1;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    width:100%;
+    font-size:20px;
+}
+
+form{margin:0 auto;
+    background-color:#fbfbfb;
+    border:3px #ebebeb solid;
+    border-radius:10px;
+    width:100%;
+}
+
+form div{
+    padding:15px;
+}
+
+
+.submit{
+    border:1px solid lightgray;
+    padding:4px 10px;
+    color:white;
+    background-color: #bfbfbf;
+    border-radius:5px;
+    border-bottom:solid 2px gray;
+}
+
+/*------------ここまでが入力フォーム---------------*/
+
+
+
+
+.right{
+    float:right;
+    width:35%;
+    /*background-color: aquamarine;*/
+    height:550px;
+    
+    
+  
+}
+
+.right .A h2{
+    float:left;
+    font-size:15px;
+    padding-top:5px;
+    border-bottom:3px dotted black;
+    width:100%;
+    
+}
+
+.right .A ul{
+    clear:left;
+    padding-top:5px;
+    padding-left:5px;
+    text-align: none;
+    font-size:13px;
+}
+
+.right .A ul li{
+    color:black;
+    clear:left;
+}
+
+.right .B h2{
+    clear:both;
+    font-size:15px;
+    padding-top:25px;
+    padding-right:5px;
+    border-bottom:3px dotted black;
+}
+
+.right .B ul{
+    clear:both;
+    padding-top:5px;
+    padding-left:5px;
+    text-align: none;
+    font-size:13px;
+}
+
+.right .B ul li{
+    color:black;
+    clear:left;
+}
+
+.right .C h2{
+    clear:both;
+    font-size:15px;
+    padding-top:25px;
+    padding-right:5px;
+    border-bottom:3px dotted black;
+}
+
+.right .C ul{
+    clear:both;
+    padding-top:5px;
+    padding-left:5px;
+    text-align: none;
+    font-size:13px;
+}
+
+.right .C ul li{
+    color:black;
+    clear:left;
+}
+
+/*---------掲示板表示場所-----------*/
+.left .kiji{margin:0 auto;
+    background-color:#fbfbfb;
+    border:3px #ebebeb solid;
+    border-radius:10px;
+    width:100%;
+    
+}
+
+.kiji h3{
+    border-bottom: 2px solid #bfbfbf;
+}
+
+
+/*---------(end)掲示板表示場所(end)-----------*/
+
+
+footer{
+    /*position:fixed;*/
+    bottom:0;
+    clear:both;
+    height:40px;
+    width:100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 10px;
+    margin-top:20px;
+}
+    
