@@ -1,5 +1,5 @@
 
-public class SmartPhone implements Mp3Player, Newfunction {
+public class SmartPhone extends Phone implements Mp3Player, Newfunction {
 	/*public void call(){
 		System.out.println("電話");
 	}
