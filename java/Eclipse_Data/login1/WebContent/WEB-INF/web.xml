@@ -4,7 +4,7 @@
 
   <display-name>login1</display-name>
   <welcome-file-list>
-  <!-- 最初に表示させたいJSPファイルを設定 -->
+  <!-- 最初に表示させたいJSPファイルを呼び出している -->
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
 
