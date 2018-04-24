@@ -19,7 +19,6 @@ public class HelloStrutsDAO {
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
-
 			if (rs.next()){
 				ret = true;
 			}
