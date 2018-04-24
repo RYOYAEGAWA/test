@@ -4,10 +4,12 @@
 <!DOCTYPE html >
 <html>
 <head>
-<meta  charset="UTF-8">
-<title>HelloStruts</title>
+<meta charset="UTF-8">
+<title>HelloStrutsError</title>
 </head>
 <body>
-<h1>HelloStruts2!</h1>
+<h1>エラーが発生しました</h1>
+<br>
+<h3>MySQLと接続できません。</h3>
 </body>
 </html>
