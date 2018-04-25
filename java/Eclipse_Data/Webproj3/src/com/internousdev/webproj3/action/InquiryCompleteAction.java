@@ -29,15 +29,15 @@ public class InquiryCompleteAction extends ActionSupport {
 		return qtype;
 	}
 
-	public void setQtype(){
-		this.qtype=qtype;
+	public void setQtype(String qtype){
+		this.qtype = qtype;
 	}
 
 	public String getBody(){
 		return body;
 	}
 
-	public void setBody(){
+	public void setBody(String body){
 		this.body=body;
 	}
 

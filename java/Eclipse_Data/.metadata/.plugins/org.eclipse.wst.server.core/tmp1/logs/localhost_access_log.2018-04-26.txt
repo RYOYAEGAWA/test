@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [26/Apr/2018:00:03:24 +0900] "POST /Webproj3/InquiryAction.action HTTP/1.1" 200 943
+0:0:0:0:0:0:0:1 - - [26/Apr/2018:00:03:40 +0900] "POST /Webproj3/InquiryCompleteAction.action HTTP/1.1" 200 368
