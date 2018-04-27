@@ -23,7 +23,7 @@ public class HelloStrutsDTO {
 		this.userName = userName;
 	}
 
-	public String getpassword(){
+	public String getPassword(){
 		return password;
 	}
 

@@ -14,7 +14,7 @@ public class HelloStrutsDAO {
 
 	List<HelloStrutsDTO> helloStrutsDTOList = new ArrayList<HelloStrutsDTO>();
 
-	public List<HelloStrutsDTO> select (){
+	public List<HelloStrutsDTO> select(){
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
