@@ -1,0 +1,18 @@
+package com.internousdev.webproj4.dao;
+
+import java.util.ArrayList;
+
+import com.internousdev.webproj4.dto.LoginDTO;
+
+public class TestDAO {
+	public List <LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
+
+	public int insert(String username, String password){
+		int ret =0;
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+
+		String sql = "insert into users(user_name, password") values(?,?)";
+	}
+
+}

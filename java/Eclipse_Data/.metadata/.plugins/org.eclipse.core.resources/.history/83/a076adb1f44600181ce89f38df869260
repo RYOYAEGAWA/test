@@ -1,9 +1,0 @@
-
-public class modorichi1 {
-
-	public static int add(int x, int y){
-		int ans = x + y;
-		return ans;
-	}
-
-}
