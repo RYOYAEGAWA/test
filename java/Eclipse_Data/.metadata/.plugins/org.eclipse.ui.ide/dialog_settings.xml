@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="CleanDialogSettings">
-		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="901" key="DIALOG_WIDTH"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 		<item value="378" key="DIALOG_HEIGHT"/>
 		<item value="433" key="DIALOG_X_ORIGIN"/>
@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\internousdev\Desktop\workspace\workspace-Egawa\working-folder\java\Eclipse_Data\Webproj5"/>
 			<item value="C:\Users\ryoya\Desktop\WF\working-folder\java\Eclipse_Data\Webproj3"/>
 			<item value="C:\Users\ryoya\Desktop\WF\working-folder\java\Eclipse_Data\WebProj2"/>
 			<item value="C:\Users\ryoya\Desktop\WF\working-folder_20180423\java\Eclipse_Data\Practice"/>
