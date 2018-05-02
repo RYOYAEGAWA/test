@@ -1,0 +1,4 @@
+SQLEditorPreferencePage.ColorDefailt=255,255,0
+SQLEditorPreferencePage.ColorSelectFore=255,255,0
+eclipse.preferences.version=1
+zigen.plugin.db.preference.SQLTemplateEditorUI=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>

@@ -12,7 +12,7 @@ import com.internousdev.webproj5.util.DBConnector;
 
 
 public class HelloStrutsDAO {
-
+//        ↓データ型                 ↓リスト名                                     ↓データ型
 	List<HelloStrutsDTO> helloStrutsDTOList = new ArrayList<HelloStrutsDTO>();
 
 	public List<HelloStrutsDTO> select() {
@@ -24,7 +24,7 @@ public class HelloStrutsDAO {
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
-
+             //table全情報取得
 			while(rs.next()) {
 				HelloStrutsDTO dto = new HelloStrutsDTO();
 				dto.setUserId(rs.getInt("user_id"));

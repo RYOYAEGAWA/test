@@ -33,10 +33,10 @@ public class LoginDAO {
 				LoginDTO dto=new LoginDTO();
 				dto.setUsername(rs.getString("user_name"));
 				dto.setPassword(rs.getString("password"));
-				loginDTOList.add(dto);
+				loginDTOList.add(dto);  //Listへ情報を追加
 			}
 
-			if (loginDTOList.size()<=0) {
+			if (loginDTOList.size()<=0) {  //DBとの情報と一致しない場合の処理
 				LoginDTO dto=new LoginDTO();
 				dto.setUsername("該当なし");
 				dto.setPassword("該当なし");
