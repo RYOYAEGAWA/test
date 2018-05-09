@@ -35,13 +35,13 @@
 				<result name="success" >buyItemConfirm.jsp</result>
 				</action>
 
-				<!-- <action name="BuyItemConfirmAction" class="com.internousdev.template.action.BuyItemConfirmAction" method="execute" >
+				<action name="BuyItemConfirmAction" class="com.internousdev.template.action.BuyItemConfirmAction" method="execute" >
 				<result name="success" >buyItemComplete.jsp</result>
-				</action> -->
+				</action>
 
-				<!-- <action name="MyPageAction" class="com.internousdev.template.action.MyPageAction" method="execute" >
+				<action name="MyPageAction" class="com.internousdev.template.action.MyPageAction" method="execute" >
 				<result name="success" >myPage.jsp</result>
-				</action> -->
+				</action>
 
 				<!-- <action name="LogoutAction" class="com.internousdev.template.action.LogoutAction" method="execute" >
 				<result name="success" >home.jsp</result>

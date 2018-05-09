@@ -21,13 +21,15 @@
 <fullyQualifiedTypeName name="com.internousdev.template.dto.BuyItemDTO"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.internousdev.template.util.DBConnector"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="com.internousdev.template.util.DateUtil"/>
-<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
-<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
 <fullyQualifiedTypeName name="com.internousdev.template.dao.UserCreateCompleteDAO"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
+<fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
+<fullyQualifiedTypeName name="com.internousdev.template.util.DateUtil"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.internousdev.template.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dao.BuyItemCompleteDAO"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>
