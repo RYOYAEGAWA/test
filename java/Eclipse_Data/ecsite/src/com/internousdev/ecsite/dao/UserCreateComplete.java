@@ -1,0 +1,39 @@
+package com.internousdev.ecsite.dao;
+
+import java.sql.PreparedStatement;
+
+import com.internousdev.ecsite.action.DataUtil;
+import com.internousdev.ecsite.util.DBConnector;
+import com.mysql.jdbc.Connection;
+
+import freemarker.template.utility.DateUtil;
+
+public class UserCreateComplete {
+
+	private DBConnector dbConnector = new DBConnection();
+
+	private Connection connection = dbConnector.getConnection();
+
+	private DataUtil dateUtil = new DateUtil();
+
+	private String sql= "INSERT INTO login_user_transaction (login_id, login_pass, user_name,inset_date) VALUES(?, ?, ?, ?)";
+
+	public void cerateUser(String loginUserId, String loginUserPassword, String userName)throws SQLExcetion {
+
+
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, loginUserId);
+			preparedStatement.setString(2, loginUserPassword);
+			preparedStatement.setString(3, userName);
+			preparedStatement.setString(4, dateUtil.getDate());
+
+			preparedStatement.execute();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally{
+			connection.close();
+		}
+	}
+
+}
