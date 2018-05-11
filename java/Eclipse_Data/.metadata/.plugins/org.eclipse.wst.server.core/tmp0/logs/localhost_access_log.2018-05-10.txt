@@ -9,3 +9,5 @@
 0:0:0:0:0:0:0:1 - - [10/May/2018:13:44:00 +0900] "POST /ecsite/UserCreateCompleteAction HTTP/1.1" 200 3461
 127.0.0.1 - - [10/May/2018:14:46:44 +0900] "GET / HTTP/1.1" 404 1019
 0:0:0:0:0:0:0:1 - - [10/May/2018:14:46:46 +0900] "GET /ecsite/userCreateComplete.jsp HTTP/1.1" 200 1446
+127.0.0.1 - - [10/May/2018:17:51:04 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [10/May/2018:17:51:09 +0900] "GET /ecsite/myPage.jsp HTTP/1.1" 200 2403
