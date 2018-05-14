@@ -75,14 +75,14 @@
 				<p>MyPage</p>
 		</div>
 		<div>
-		<s:if test="session.message == null">
-				<h3>ご購入情報ははありません。</h3>
+		<s:if test="myPageList == null">
+				<h3>ご購入情報はありません。</h3>
 		</s:if>
 		<s:elseif test="message == null">
-			<h3>ご購入は以下になります。</h3>
+			<h3>ご購入情報は以下になります。</h3>
 			<table border="1">
 			<tr>
-					<th>商品</th>
+					<th>商品名</th>
 					<th>値段</th>
 					<th>購入個数</th>
 					<th>支払い方法</th>
@@ -107,7 +107,7 @@
 			<h3><s:property value="message" /></h3>
 	</s:if>
 	<div id = "text-right">
-			<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'></a></p>
+			<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 			<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 	</div>
 </div>

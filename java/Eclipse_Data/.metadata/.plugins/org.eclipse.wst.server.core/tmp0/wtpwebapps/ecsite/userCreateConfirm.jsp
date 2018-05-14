@@ -10,7 +10,7 @@
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<title>UserCreate画面</title>
+		<title>UserCreateConfirm画面</title>
 
 	<style type="text/css">
 
@@ -56,8 +56,7 @@
 		}
 
 	</style>
-</head>
-<body>
+
 
 </head>
 <body>

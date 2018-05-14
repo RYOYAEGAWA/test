@@ -75,6 +75,7 @@
 							</td>
 							<td>
 									<s:property value="session.buyItem_name" />
+									<br>
 							</td>
 					</tr>
 					<tr>
@@ -106,7 +107,7 @@
 							</td>
 							<td>
 									<input type="radio" name="pay" value="1" checked="checked">現金払い
-									<input type="radio" name="pay" value="2" >クレジットカード
+									<input type="radio" name="pay" value="2">クレジットカード
 							</td>
 					</tr>
 					<tr>
@@ -119,7 +120,7 @@
 		</s:form>
 			<div>
 				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-				<p>マイページ<a href ='<s:url action="MyPageAction" />'>こちら</a></p>
+				<p>マイページは<a href ='<s:url action="MyPageAction" />'>こちら</a></p>
 
 			</div>
 		</div>
