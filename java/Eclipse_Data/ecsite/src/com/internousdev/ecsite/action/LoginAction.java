@@ -21,16 +21,17 @@ public class LoginAction extends ActionSupport implements SessionAware  {
 	public String execute() {
 		String result = ERROR;
 		loginDTO=loginDAO.getLoginUserInfo(loginUserId, loginPassword);
-		session.put("loginUser", loginDTO);
+		session.put("loginUser", loginDTO);  //loginUserキーでDTOデータを格納 △
 
-		if(((LoginDTO)session.get("loginUser")).getLoginFlg()) {
+		   //↓なぜ必要なのか？風見さんに確認中。
+		if(((LoginDTO)session.get("loginUser")).getLoginFlg()) {   //LoginFlgがtrueだったら以降の処理を実行する
 			result = SUCCESS;
-			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
+			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();  //商品情報取得
 
-			session.put("login_user_id", loginDTO.getLoginId());
-			session.put("id", buyItemDTO.getId());
-			session.put("buyItem_name", buyItemDTO.getItemName());
-			session.put("buyItem_price", buyItemDTO.getItemPrice());
+			session.put("login_user_id", loginDTO.getLoginId());    //login_user_idキーでIDを格納
+			session.put("id", buyItemDTO.getId());    //idキーで商品IDを格納
+			session.put("buyItem_name", buyItemDTO.getItemName());   //buyItem_nameキーで商品名を格納
+			session.put("buyItem_price", buyItemDTO.getItemPrice());      //buyItem_priceキーで商品価格を格納
 
 			return result;
 		}

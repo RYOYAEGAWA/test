@@ -18,18 +18,20 @@ public class LoginDAO {
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
+			//SQL文ひな形の「?」へパラメータを入れ込む
 			preparedStatement.setString(1, loginUserId);
 			preparedStatement.setString(2,  loginPassword);
 
+			//DBからの結果を取得
 			ResultSet resultSet = preparedStatement.executeQuery();
 
-			if(resultSet.next()) {
-				loginDTO.setLoginId(resultSet.getString("login_id"));
-				loginDTO.setLoginPassword(resultSet.getString("login_pass"));
-				loginDTO.setUserName(resultSet.getString("user_name"));
+			//DTOへ取得した結果をセット
+			if(resultSet.next()) {  //DB1行目から次の行へ進む
+				loginDTO.setLoginId(resultSet.getString("login_id"));  //login_id列の値を取得し、DTOへセットする
+				loginDTO.setLoginPassword(resultSet.getString("login_pass"));  //login_pass列の値を取得し、DTOへセットする
 
-				if(!(resultSet.getString("login_id").equals(null))) {
-						loginDTO.setLoginFlg(true);
+				if(!(resultSet.getString("login_id").equals(null))) {   //login_id列が空っぽじゃないからfaiseの逆のtrueとなる
+						loginDTO.setLoginFlg(true);    //DTOのloginFlgのfalseがtrueになる
 				}
 				}
 			}catch(Exception e) {
