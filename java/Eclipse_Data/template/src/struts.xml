@@ -18,7 +18,7 @@
 				<result name="error" >home.jsp</result>
 				</action>
 
-				<action name="UserCreateAction" class="com.internousdev.template.action.UserCreateAction" method="execute" >
+				<!-- <action name="UserCreateAction" class="com.internousdev.template.action.UserCreateAction" method="execute" >
 				<result name="success" >userCreate.jsp</result>
 				</action>
 
@@ -45,7 +45,7 @@
 
 				 <action name="LogoutAction" class="com.internousdev.template.action.LogoutAction" method="execute" >
 				<result name="success" >home.jsp</result>
-				</action>
+				</action> -->
 
 
 
