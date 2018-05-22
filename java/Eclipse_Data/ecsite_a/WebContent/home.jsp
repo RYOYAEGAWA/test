@@ -35,50 +35,67 @@
 			border:1px solid #333;
 			}
 
-			#header {
+			/* #header {
 			width:100%;
 			height:80px;
 			background-color:black;
-			}
+			} */
 
 			#main {
 			width:100%;
 			height:500px;
 			text-align:center;
+			margin-top:0px;
 			}
 
 			#footer {
 			width:100%;
 			height:80px;
-			background-color:black;
-			clear:both;
+			margin-bottom:0px;
+			background-color:skyblue;
+			/* clear:both; */
 			}
-			#text-center {
+			/* #text-center {
 			display: inline-block;
 			text-align: center;
-}
+			} */
+
+			/* .HomeImage{
+			 display:block;
+			 margin:0 auto;
+			 height:10px;
+			 width:10px;
+			 float:left; */
+			/* margin-top:0px; */
+			/* margin-bottom:0px; */
+			/* z-index:5; */
+			/* align:middle; */
+
+			}
+
 		</style>
 
 </head>
 <body>
-		<div id="header">
+<s:include value="Header.jsp"></s:include>
+		<!-- <div id="header">
 			<div id ="pr">
 			</div>
-		</div>
+		</div> -->
 		<div id="main">
+
 			<div id="top">
-				<p>Home</p>
+				<h1>BIKE</h1>
 			</div>
-			<div id="text-center">
-				<s:form action="HomeAction">
-						<s:submit value="商品購入"/>
-				</s:form>
-				<s:if test="#session.id != null">
-						<p>ログアウトする場合は
-								<a href= '<s:url action="LogoutAction" />'>こちら</a></p>
-				</s:if>
-				</div>
+
+        <!-- 画像挿入 -->
+			<div class="HomeImage">
+			<div><img src="./image/Top_Bike.jpg"  height=70% width=70%></div>
 			</div>
+
+		</div>
+
+
 			<div id="footer">
 					<div id="pr">
 					</div>

@@ -68,22 +68,29 @@
 				</div>
 		<div>
 		<s:form action="BuyItemAction">
+
+		<s:iterator value="session.AllItem">
+
 			<table>
 					<tr>
 							<td>
-									<span>商品名</span>
+									<span>車種名</span>
 							</td>
 							<td>
-									<s:property value="session.buyItem_name" />
+									<s:property value="itemName" />
 									<br>
 							</td>
 					</tr>
+
+					<img class="image" style="width:150px; height:100px;" src="<s:property value='image_file_path'/>" >
+
+
 					<tr>
 							<td>
 									<span>値段</span>
 							</td>
 							<td>
-							<s:property value="session.buyItem_price" />
+							<s:property value="itemPrice" />
 									<span>円</span>
 							</td>
 					</tr>
@@ -117,6 +124,7 @@
 					</tr>
 
 			</table>
+			</s:iterator>
 		</s:form>
 			<div>
 				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
