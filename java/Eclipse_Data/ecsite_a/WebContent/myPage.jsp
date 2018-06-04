@@ -36,11 +36,11 @@
 		border:1px solid #333;
 		}
 
-		#header {
+		/* #header {
 		width: 100%;
 		height: 80px;
 		background-color: black;
-		}
+		} */
 
 		#main {
 		width: 100%;
@@ -66,6 +66,7 @@
 
 </head>
 <body>
+<s:include value="Header.jsp"></s:include>
 		<div id="header">
 				<div id="pr">
 				</div>
@@ -74,24 +75,33 @@
 				<div id="top">
 				<p>MyPage</p>
 		</div>
+
 		<div>
-		<s:if test="myPageList == null">
+
+		<s:if test="myPage == null">
 				<h3>ご購入情報はありません。</h3>
 		</s:if>
+
 		<s:elseif test="message == null">
 			<h3>ご購入情報は以下になります。</h3>
 			<table border="1">
 			<tr>
 					<th>商品名</th>
 					<th>値段</th>
+					<th>スタイル</th>
+					<th>排気量</th>
+					<th>メーカー</th>
 					<th>購入個数</th>
 					<th>支払い方法</th>
 					<th>購入日</th>
 			</tr>
-			<s:iterator value ="myPageList">
+			<s:iterator value ="myPage">
 			<tr>
 					<td><s:property value="itemName" /></td>
 					<td><s:property value="totalPrice" /><span>円</span></td>
+					<td><s:property value="style" /></td>
+					<td><s:property value="engine_cc" /></td>
+					<td><s:property value="makerName" /></td>
 					<td><s:property value="totalCount" /><span>個</span></td>
 					<td><s:property value="payment" /></td>
 					<td><s:property value="insert_date"/></td>
@@ -103,6 +113,8 @@
 				<s:submit value="削除" method="delete" />
 		</s:form>
 	</s:elseif>
+
+
 	<s:if test="message !=null">
 			<h3><s:property value="message" /></h3>
 	</s:if>

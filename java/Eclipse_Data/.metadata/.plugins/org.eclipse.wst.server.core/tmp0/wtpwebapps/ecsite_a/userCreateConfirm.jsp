@@ -60,10 +60,7 @@
 
 </head>
 <body>
-		<div id="header">
-				<div id="pr">
-				</div>
-		</div>
+		<s:include value="Header.jsp"></s:include>
 		<div id="main">
 				<div id="top">
 				<p>UserCreateConfirm</p>

@@ -1,0 +1,17 @@
+127.0.0.1 - - [31/May/2018:10:07:14 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:15 +0900] "GET /ecsite/ HTTP/1.1" 200 3183
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:15 +0900] "GET /ecsite/image/Top_Bike.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:36 +0900] "GET /ecsite/ HTTP/1.1" 200 3183
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:36 +0900] "GET /favicon.ico HTTP/1.1" 404 1041
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:47 +0900] "GET /ecsite/GoLoginAction.action;jsessionid=08B4A241FE69FDA82295DB85B7F4A2A3 HTTP/1.1" 200 3418
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:07:49 +0900] "GET /ecsite/UserCreateAction.action HTTP/1.1" 200 3400
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:08:35 +0900] "POST /ecsite/UserCreateConfirmAction.action HTTP/1.1" 200 3265
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:08:40 +0900] "POST /ecsite/UserCreateCompleteAction.action HTTP/1.1" 200 9469
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:13 +0900] "POST /ecsite/UserCreateConfirmAction.action HTTP/1.1" 200 3265
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:16 +0900] "POST /ecsite/UserCreateCompleteAction.action HTTP/1.1" 200 2536
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:20 +0900] "GET /ecsite/HomeAction.action HTTP/1.1" 200 3418
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:37 +0900] "POST /ecsite/LoginAction.action HTTP/1.1" 200 7521
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:37 +0900] "GET /ecsite/image/%E3%83%90%E3%83%AB%E3%82%AB%E3%83%B3400%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:37 +0900] "GET /ecsite/image/%E3%83%89%E3%83%A9%E3%83%83%E3%82%B0%E3%82%B9%E3%82%BF%E3%83%BC.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:37 +0900] "GET /ecsite/image/FAT_BOY.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/May/2018:10:09:37 +0900] "GET /ecsite/image/SR.jpg HTTP/1.1" 304 -

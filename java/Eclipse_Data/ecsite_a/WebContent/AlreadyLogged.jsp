@@ -48,12 +48,12 @@
 		text-align: center;
 		}
 
-		#footer {
+		/* #footer {
 		width: 100%;
 		height: 80px;
 		background-color: skyblue;
 		clear: both;
-		}
+		} */
 
 		#text-link {
 		display:inline-block;
@@ -76,11 +76,7 @@
 		<div>
 
 				<h3>すでにログイン済です。</h3>
-				<s:form action="LoginAction">
-						<s:textfield name="loginUserId"/>
-						<s:password name="loginPassword"/>
-						<s:submit value="ログイン"/>
-				</s:form>
+
 				<br/>
 				<div id="text-link">
 					<p>新規ユーザー登録は

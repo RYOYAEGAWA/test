@@ -64,6 +64,7 @@
 	<h3>BUY ITEM</h3>
 
 	<div class="push"></div>
+	
 
 	<img src="./image/cupcake.png" style="width:40px;">
 

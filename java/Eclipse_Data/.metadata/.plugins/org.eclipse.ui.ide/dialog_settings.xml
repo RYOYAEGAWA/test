@@ -12,6 +12,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\fifties"/>
+			<item value="C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\login1"/>
 			<item value="C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\MyEc"/>
 			<item value="C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\Webproj5"/>
 			<item value="C:\Users\internousdev\Desktop\workspace\workspace-Egawa\working-folder\java\Eclipse_Data\ecsite_a"/>
@@ -27,5 +29,7 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>

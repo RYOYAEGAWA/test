@@ -33,7 +33,7 @@ public class LoginAction extends ActionSupport implements SessionAware  {
 		String result = ERROR;
 
 		//すでにログイン済みの場合の処理
-		if(session.containsKey("id")){
+		if(session.containsKey("login_user_id")){
 			result = "alreadyLogged";
 		}
 
@@ -42,6 +42,7 @@ public class LoginAction extends ActionSupport implements SessionAware  {
 		//loginUserキーでDTOデータを格納
 		session.put("loginUser", loginDTO);
 
+
 		   //↓型の指定
 		if(((LoginDTO)session.get("loginUser")).getLoginFlg()) {   //LoginFlgがtrueだったら以降の処理を実行する
 			result = SUCCESS;
@@ -49,8 +50,10 @@ public class LoginAction extends ActionSupport implements SessionAware  {
 			AllItemList  = buyItemDAO.getBuyItemInfo();  //商品情報取得
 			session.put("AllItem", AllItemList);
 
-			/*session.put("login_user_id", loginDTO.getLoginId());    //login_user_idキーでIDを格納
-			session.put("id", AllItemList .getId());    //idキーで商品IDを格納
+			System.out.println(AllItemList);
+
+			session.put("login_user_id", loginDTO.getLoginId());    //login_user_idキーでIDを格納
+			/*session.put("id", AllItemList .getId());    //idキーで商品IDを格納
 			session.put("BikeName", AllItemList .getItemName());   //BikeNameキーで商品名を格納
 			session.put("itemPrice", AllItemList .getItemPrice());
 			session.put("makerName", AllItemList .getMakerName());

@@ -39,10 +39,10 @@
 	<div class="contents">
 		<ul>
 			<li><a href='<s:url action="GoHomeAction"/>'>Home</a></li>
-			<li><a href='<s:url action="HomeAction"/>'>Login</a></li>
-			<li><a href='<s:url action=""/>'>Product</a></li>
+			<li><a href='<s:url action="GoLoginAction"/>'>Login</a></li>
+			<li><a href='<s:url action="ProductPageAction"/>'>Product</a></li>
 			<li><a href='<s:url action="MyPageAction"/>'>MyPage</a></li>
-			<li><a href='<s:url action=""/>'>商品一覧</a></li>
+			<li><a href='<s:url action="LogoutAction"/>'>Logout</a></li>
 		</ul>
 	</div>
 </header>

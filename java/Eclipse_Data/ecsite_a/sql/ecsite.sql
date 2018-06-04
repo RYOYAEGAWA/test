@@ -25,6 +25,8 @@ create table item_info_transaction(
 
 	item_name varchar(30),
 	item_price int,
+	engine_cc int,
+	style varchar(30),
 	item_stock int,
 	maker_company varchar(30),
 	image_file_path varchar(100),
@@ -45,11 +47,11 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock, maker_company, image_file_path) VALUES
-("バルカン400クラシック", 800000,10,"kawasaki","./image/バルカン400クラシック.jpg"),
-("ドラッグスター400",500000,10,"yamaha","./image/ドラッグスター.jpg"),
-("FAT BOY",900000,5,"harley-davidson","./image/FAT_BOY.jpg"),
-("SR400",550000,30,"yamaha","./image/SR.jpg");
+INSERT INTO item_info_transaction(item_name, item_price, engine_cc, style, item_stock, maker_company, image_file_path) VALUES
+("バルカン400クラシック", 800,400,"アメリカン",10,"kawasaki","./image/バルカン400クラシック.jpg"),
+("ドラッグスター400",500,400,"アメリカン",10,"yamaha","./image/ドラッグスター.jpg"),
+("FAT BOY",1000,1745,"アメリカン",5,"harley-davidson","./image/FAT_BOY.jpg"),
+("SR400",200,400,"ストリート",8,"yamaha","./image/SR.jpg");
 
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("a","aaa","test");
 

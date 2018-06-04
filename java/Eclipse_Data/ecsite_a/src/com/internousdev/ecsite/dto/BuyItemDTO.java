@@ -6,11 +6,21 @@ public class BuyItemDTO {
 
 	public String itemName;
 
-	public String itemPrice;
+	public int itemPrice;
 
 	public String makerName;
 
 	public String image_file_path;
+
+	public String pay;
+
+	public int count;
+
+	public int total_price;
+
+	public int engine_cc;
+
+	public String style;
 
 	public String getItemName() {
 		return itemName;
@@ -20,11 +30,11 @@ public class BuyItemDTO {
 		this.itemName = itemName;
 	}
 
-	public String getItemPrice(){
+	public int getItemPrice(){
 		return itemPrice;
 	}
 
-	public void setItemPrice(String itemPrice) {
+	public void setItemPrice(int itemPrice) {
 		this.itemPrice = itemPrice;
 	}
 	public int getId() {
@@ -52,5 +62,46 @@ public class BuyItemDTO {
 	public void setImage_file_path(String image_file_path) {
 		this.image_file_path = image_file_path;
 	}
+
+	public String getPay(){
+		return pay;
+	}
+
+
+	public void setPay(String pay){
+		this.pay = pay;
+	}
+
+	public int getCount(){
+		return count;
+	}
+
+	public void setCount(int count){
+		this.count = count;
+	}
+
+	public int getTotal_price(){
+		return total_price;
+	}
+
+	public void setTotal_price(int total_price){
+		this.total_price = total_price;
+}
+
+	public int getEngine_cc(){
+		return engine_cc;
+	}
+
+	public void setEngine_cc(int engine_cc){
+		this.engine_cc = engine_cc;
+}
+
+	public String getStyle(){
+		return style;
+	}
+
+	public void setStyle(String style){
+		this.style = style;
+}
 
 }

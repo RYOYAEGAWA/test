@@ -48,12 +48,12 @@
 		text-align: center;
 		}
 
-		#footer {
+		/* #footer {
 		width: 100%;
 		height: 80px;
 		background-color: black;
 		clear: both;
-		}
+		} */
 
 	</style>
 </head>
@@ -61,10 +61,7 @@
 
 </head>
 <body>
-		<div id="header">
-				<div id="pr">
-				</div>
-		</div>
+		<s:include value="Header.jsp"></s:include>
 		<div id="main">
 				<div id="top">
 				<p>UserCreate</p>

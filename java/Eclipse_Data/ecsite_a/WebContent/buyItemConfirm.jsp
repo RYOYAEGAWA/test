@@ -50,12 +50,12 @@
 		text-align: center;
 		}
 
-		#footer {
+		/* #footer {
 		width: 100%;
 		height: 80px;
 		background-color: black;
 		clear: both;
-		}
+		} */
 
 	</style>
 	<script type="text/javascript">
@@ -68,6 +68,7 @@
 
 </head>
 <body>
+<s:include value="Header.jsp"></s:include>
 		<div id="header">
 				<div id="pr">
 				</div>
@@ -79,32 +80,63 @@
 		<div>
 				<s:form>
 
-						<tr>
-								<td>商品名</td>
-								<td><s:property value="session.buyItem_name" /></td>
-						</tr>
-						<tr>
-								<td>値段</td>
-								<td>
-										<s:property value="session.total_price" />
-										<span>円</span>
-								</td>
-						</tr>
-						<tr>
-								<td>購入個数</td>
-								<td>
-										<s:property value="session.count" />
-										<span>個</span>
-								</td>
-						</tr>
-						<tr>
-								<td>支払い方法</td>
-								<td><s:property value="session.pay" /></td>
-						</tr>
-						<tr>
-								<td><br></td>
-						</tr>
-						<tr>
+
+			<s:iterator value="session.list">
+			<s:if test="count !=0">
+
+				<dl class="buy-item-list">
+
+					<dd>
+					<img class="image" style="width:150px; height:100px;" src="<s:property value='image_file_path'/>" ><br>
+
+					商品名:
+					<s:property value="itemName" /><br><br>
+
+					値段:
+					<s:property value="itemPrice" /><span>円</span><br>
+
+					スタイル:
+					<s:property value="style" /><br>
+
+					排気量:
+					<s:property value="engine_cc" /><span>cc</span><br>
+
+					メーカー:
+					<s:property value="makerName" /><br>
+
+					購入個数:
+					<s:property value="count" /><span>個</span><br>
+
+					</dd>
+				</dl>
+				<br>
+
+			</s:if>
+		</s:iterator>
+
+		<dl class="buy-item-confirm">
+					<dd>
+						支払い方法:
+						<s:property value="session.pay" />
+					</dd>
+					<dd>
+
+							合計金額:
+							<s:property value="session.totalPrice_a"/><span>円</span>
+
+<!--
+						<s:if test="AllItem.size()>1">
+							合計金額1:
+							<s:property value="session.totalPrice_a"/><span>円</span>
+						</s:if>
+						<s:else>
+							合計金額2:
+							<s:property value="session.total_price"/><span>円</span>
+						</s:else>
+-->
+					</dd>
+				</dl>
+								<tr>
 								<td><input type="button" value="戻る"
 									onclick="submitAction('HomeAction')" /></td>
 								<td><input type="button" value="完了"

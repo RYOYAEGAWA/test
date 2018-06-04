@@ -9,6 +9,9 @@ public class MyPageDTO {
 	public String userName;
 	public String id;
 	public String insert_date;
+	public String makerName;
+	public String engine_cc;
+	public String style;
 
 
 	public String getItemName() {
@@ -67,4 +70,27 @@ public class MyPageDTO {
 		this.insert_date = insert_date;
 	}
 
+	public String getMakerName(){
+		return makerName;
+	}
+
+	public void setMakerName(String MakerName){
+		this.makerName = MakerName;
+	}
+
+	public String getEngine_cc(){
+		return engine_cc;
+	}
+
+	public void setEngine_cc(String engine_cc){
+		this.engine_cc = engine_cc;
+}
+
+	public String getStyle(){
+		return style;
+	}
+
+	public void setStyle(String style){
+		this.style = style;
+}
 }

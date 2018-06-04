@@ -15,20 +15,20 @@ public class LoginAction extends ActionSupport implements SessionAware {
 	private String password;  //Login.jspからの得たログイン情報が入ってる
 	private Map<String, Object> session;       //DBへログイン情報を送るために必要(ローカルsession)
 
-	/*executeという変数へ実行内容を入れ込んであげている*/
+	/*executeメソッド実行*/
 	public String execute() throws SQLException {
 		String ret = ERROR;
 		LoginDAO dao = new LoginDAO();               //DAOファイルをインスタンス化
 		LoginDTO dto = new LoginDTO();               //DTOファイルをインスタンス化
 
-		dto = dao.select(name,password);        //MySQLの結果
-		if(name.equals(dto.getName())){          //上記のログイン情報とMySQLからの結果を照合
-			if(password.equals(dto.getPassword())){  //上記のログイン情報とMySQLからの結果を照合
-				ret = SUCCESS;
+		dto = dao.select(name,password);        //loginDAOのselectメソッド実行。nameとpasswordにlogin.jspから取得した値が入る。
+		if(name.equals(dto.getName())){          //上記のログイン情報とloginDTOに格納した値を照合
+			if(password.equals(dto.getPassword())){  //上記のログイン情報とloginDTOに格納した値を照合
+				ret = SUCCESS;  //ここまでできたら、ret変数へsuccessを代入する。
 			}
 		}
 		session.put("name",dto.getName());  //今回は特に活躍してない。jspファイルとかから呼び出すときに便利。
-		return ret;  //if文の結果をexecuteメソッドへ返す
+		return ret;  //executeメソッドへ代入したsuccessを返す。
 	}
 	public String getName(){  //25行目の"name"がここを経由してフィールドからログイン情報を取得している。
 		return name;

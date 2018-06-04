@@ -36,11 +36,11 @@
 		border:1px solid #333;
 		}
 
-		#header {
+		/* #header {
 		width: 100%;
 		height: 80px;
 		background-color: black;
-		}
+		} */
 
 		#main {
 		width: 100%;
@@ -48,16 +48,17 @@
 		text-align: center;
 		}
 
-		#footer {
+		/* #footer {
 		width: 100%;
 		height: 80px;
 		background-color: black;
 		clear: both;
-		}
+		} */
 
 	</style>
 </head>
 <body>
+<s:include value="Header.jsp"></s:include>
 		<div id="header">
 				<div id="pr">
 				</div>
@@ -67,47 +68,98 @@
 				<p>BuyItem</p>
 				</div>
 		<div>
+
+		<table>
+
+	<!-- メーカー表示機能 -->
+	<s:form action="MakerSearchAction">
+	<tr>
+		<td>
+		<select name="sortCategory" onchange="submit(this.form)">
+			<option value="0" selected="selected">メーカー選択</option>
+			<option value="kawasaki">カワサキ</option>
+			<option value="yamaha">ヤマハ</option>
+			<option value="harley-davidson">ハーレー</option>
+		</select>
+		</td>
+	</tr>
+	</s:form>
+
+
+
+
+	<p><a href='<s:url action="ProductPageAction"/>'>検索のリセット</a></p>
+
+
+	<!-- 商品検索機能 -->
+	<s:form action="SearchAction">
+	<tr>
+		<td><s:textfield name="searchWord" value=""/><s:submit class="button" value="検索"/></td>
+	</tr>
+	</s:form>
+
+	<!-- エラーーメッセージ -->
+	<s:if test="searchMessage != null ">
+		<p class="error-message"><s:property value="searchMessage" escape="false"/></p>
+	</s:if>
+
+
+
+
+
+
+
 		<s:form action="BuyItemAction">
 
+          <!-- 商品情報取得 -->
 		<s:iterator value="session.AllItem">
 
-			<table>
-					<tr>
-							<td>
-									<span>車種名</span>
-							</td>
-							<td>
-									<s:property value="itemName" />
-									<br>
-							</td>
-					</tr>
-
-					<img class="image" style="width:150px; height:100px;" src="<s:property value='image_file_path'/>" >
 
 
-					<tr>
-							<td>
-									<span>値段</span>
-							</td>
-							<td>
-							<s:property value="itemPrice" />
-									<span>円</span>
-							</td>
-					</tr>
-					<tr>
-							<td>
-								<span>購入個数</span>
-							</td>
-							<td>
-								<select name="count">
-								<option value="1" selected="selected">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-								</select>
-							</td>
-					</tr>
+
+			<div class="item_description">
+			<img class="image" style="width:300px; height:250px;" src="<s:property value='image_file_path'/>" >
+
+			<br><br>
+
+			<span>車種名:</span>
+			<s:property value="itemName" /><br>
+
+			<span>値段:</span>
+			<s:property value="itemPrice" /><span>円</span><br>
+
+			<span>スタイル:</span>
+			<s:property value="style" /><br>
+
+			<span>排気量:</span>
+			<s:property value="engine_cc" /><span>cc</span><br>
+
+			<span>メーカー:</span>
+			<s:property value="makerName" /><br>
+
+			<span>購入個数:</span>
+					<div class="select-box">
+					<select name="count">
+						<option value="0" selected="selected">-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+			</div>
+
+				<s:else>
+					<select name="count">
+						<option value="0" selected="selected">0</option>
+					</select>
+				</s:else>
+			</div>
+
+
+
+	</s:iterator>
+
 					<tr>
 							<td>
 									<span>支払い方法</span>
@@ -123,9 +175,14 @@
 							</td>
 					</tr>
 
-			</table>
-			</s:iterator>
+
+
+
+
+
+
 		</s:form>
+		</table>
 			<div>
 				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 				<p>マイページは<a href ='<s:url action="MyPageAction" />'>こちら</a></p>

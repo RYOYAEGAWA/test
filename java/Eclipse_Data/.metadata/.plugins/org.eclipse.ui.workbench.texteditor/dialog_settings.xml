@@ -2,33 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="action" key="selection"/>
+		<item value="MakerList" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="action"/>
+			<item value="AllItem"/>
+			<item value="maker"/>
+			<item value="Category"/>
+			<item value="&quot;buyItemDTOList&quot;"/>
+			<item value="Bike"/>
+			<item value="buyItem.jsp"/>
 			<item value="pay"/>
-			<item value="画像"/>
-			<item value="session.get"/>
-			<item value="login_user_id"/>
-			<item value="loginFlg"/>
-			<item value="null"/>
-			<item value="field list"/>
+			<item value="count"/>
 		</list>
 		<list key="replacehistory">
+			<item value="MakerList"/>
+			<item value="Maker"/>
+			<item value="maker"/>
+			<item value="&quot;AllItem&quot;"/>
+			<item value="Bike"/>
+			<item value="bike.jsp"/>
 			<item value="ecsite"/>
 			<item value="ecsite1"/>
-			<item value="ecsite2"/>
-			<item value="test"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="309" key="DIALOG_WIDTH"/>
 		<item value="1|Meiryo UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Meiryo UI" key="DIALOG_FONT_NAME"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="-441" key="DIALOG_X_ORIGIN"/>
-		<item value="249" key="DIALOG_Y_ORIGIN"/>
+		<item value="603" key="DIALOG_X_ORIGIN"/>
+		<item value="238" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
