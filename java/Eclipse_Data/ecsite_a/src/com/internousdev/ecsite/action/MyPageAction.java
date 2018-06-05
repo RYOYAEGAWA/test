@@ -25,7 +25,6 @@ public class MyPageAction extends ActionSupport implements SessionAware  {
 			return ERROR;  //ログインしてたらここは、スルーされる。
 		}
 
-
 		if(deleteFlg == null) {  //履歴の削除がされているか否か、チェックをしている。
 
 			/*String item_transaction_id = session.get("id").toString();*/

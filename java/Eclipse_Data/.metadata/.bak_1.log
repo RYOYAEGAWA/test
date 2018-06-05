@@ -1,4 +1,4 @@
-!SESSION 2018-05-21 10:12:56.549 -----------------------------------------------
+!SESSION 2018-06-03 16:00:58.146 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_74
 java.vendor=Oracle Corporation
@@ -7,9 +7,227 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.bak_0.log
-Created Time: 2018-05-21 14:49:14.565
+Created Time: 2018-06-04 17:45:46.087
 
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 14:49:14.571
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-06-04 17:45:46.088
+!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target で http://www.pramati.com/downloads/eclipse/updates/p2.index への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	... 23 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 29 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-06-04 17:46:25.427
+!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target で http://www.pramati.com/downloads/eclipse/updates/p2.index への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	... 23 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 29 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-06-04 17:47:03.224
+!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target で http://www.pramati.com/downloads/eclipse/updates/p2.index への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	... 23 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 29 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-06-04 17:47:34.462
+!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target で http://www.pramati.com/downloads/eclipse/updates/p2.index への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1509)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:747)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:123)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
+	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
+	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	... 23 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 29 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-06-04 17:48:26.579
+!MESSAGE Connection timed out: 接続 で http://www.pramati.com/downloads/eclipse/updates/p2.index への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 568 2018-06-04 17:51:47.484
 !MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
 !STACK 0
 java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
@@ -26,7 +244,7 @@ java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Ecli
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 15:27:23.473
+!ENTRY org.eclipse.core.resources 4 568 2018-06-04 18:11:39.153
 !MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
 !STACK 0
 java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
@@ -43,7 +261,7 @@ java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Ecli
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 16:12:03.652
+!ENTRY org.eclipse.core.resources 4 568 2018-06-04 18:19:21.664
 !MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
 !STACK 0
 java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
@@ -60,430 +278,12 @@ java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Ecli
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 16:23:57.203
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jface.text 2 0 2018-05-21 16:29:49.648
-!MESSAGE 
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
-	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
-	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
-	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:582)
-	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 16:53:05.580
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 16:59:32.691
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 17:08:44.773
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-21 17:41:33.294
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-22 00:37:05.341
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-22 00:47:54.628
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE ALT+SHIFT+ARROW_RIGHT の競合が発生しました:
-Binding(ALT+SHIFT+ARROW_RIGHT,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,次の要素を選択,
-		次の兄弟を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@634f40d,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(ALT+SHIFT+ARROW_RIGHT,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,次の要素を選択,
-		次の兄弟を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37d50217,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE CTRL+SHIFT+C の競合が発生しました:
-Binding(CTRL+SHIFT+C,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,コメントの切り替え,
-		選択された行のコメントを切り替えます,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17ea7fe1,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+C,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,コメントの切り替え,
-		コメントの切り替え,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66ca8882,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE ALT+SHIFT+ARROW_DOWN の競合が発生しました:
-Binding(ALT+SHIFT+ARROW_DOWN,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,前回の選択を復元,
-		前回の選択を復元,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46c4e0d9,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(ALT+SHIFT+ARROW_DOWN,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,前回の選択を復元,
-		前回の選択を復元,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15b882a0,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE CTRL+SHIFT+ARROW_UP の競合が発生しました:
-Binding(CTRL+SHIFT+ARROW_UP,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,前のメンバーへジャンプ,
-		コンパイル単位の前のメンバーにキャレットを移動,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@191707d4,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+ARROW_UP,
-	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,前の兄弟,
-		前の兄弟へジャンプ,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30be6a05,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE ALT+SHIFT+ARROW_UP の競合が発生しました:
-Binding(ALT+SHIFT+ARROW_UP,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,エンクロージング要素の選択,
-		エンクロージング要素を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@38a21c67,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(ALT+SHIFT+ARROW_UP,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,エンクロージング要素の選択,
-		エンクロージング要素を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5834fd3f,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE CTRL+SHIFT+P の競合が発生しました:
-Binding(CTRL+SHIFT+P,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,対応する大括弧にジャンプ,
-		カーソルを対応する大括弧に移動します,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7cf369e5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+P,
-	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Maven プラグインの追加,
-		Maven プラグインの追加,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d509c8a,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.core.runtime.xml,,,system)
-Binding(CTRL+SHIFT+P,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,一致する文字,
-		Go to Matching Character,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3bd5dff5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE CTRL+I の競合が発生しました:
-Binding(CTRL+I,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,インデントの訂正,
-		Corrects the indentation of the selected lines,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c580153,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+I,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,アクティブ要素のフォーマット,
-		アクティブ要素のフォーマット,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47d7e8b5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-Binding(CTRL+I,
-	ParameterizedCommand(Command(zigen.plugin.InsertRecordCommand,新規レコードの作成,
-		,
-		Category(zigen.plugin.db.category,DBViewer,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14b1739b,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE A conflict occurred for CTRL+SHIFT+M:
-Binding(CTRL+SHIFT+M,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.import,インポートの追加,
-		選択項目上でインポート・ステートメントを作成します,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@736a8ca9,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+M,
-	ParameterizedCommand(Command(org.eclipse.jst.jsp.ui.add.imports,インポートの追加(&P),
-		Create import declaration for selection,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e1b1d22,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jst.jsp.ui.structured.text.editor.jsp.scope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.277
-!MESSAGE CTRL+SHIFT+/ の競合が発生しました:
-Binding(CTRL+SHIFT+/,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,ブロック・コメントの追加,
-		選択をブロック・コメントで囲みます,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1da06937,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+/,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,ブロック・コメントの追加,
-		ブロック・コメントの追加,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3502b614,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.278
-!MESSAGE CTRL+O の競合が発生しました:
-Binding(CTRL+O,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,クイック・アウトライン,
-		エディター入力用のクイック・アウトラインを表示します,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ac7fa82,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+O,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,クイック・アウトライン,
-		エディター入力用のクイック・アウトラインを表示します,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16e93c10,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.278
-!MESSAGE CTRL+SHIFT+F の競合が発生しました:
-Binding(CTRL+SHIFT+F,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,フォーマット,
-		選択されたテキストのフォーマット,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@95bb8fd,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+F,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,フォーマット,
-		選択のフォーマット,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35c69e6b,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.278
-!MESSAGE CTRL+SHIFT+\ の競合が発生しました:
-Binding(CTRL+SHIFT+\,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,ブロック・コメントの除去,
-		選択を囲むブロック・コメントを除去します,
-		Category(org.eclipse.jdt.ui.category.source,ソース,Java ソース・アクション,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e7362bb,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+\,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,ブロック・コメントの除去,
-		ブロック・コメントの除去,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f69b166,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.278
-!MESSAGE ALT+SHIFT+ARROW_LEFT の競合が発生しました:
-Binding(ALT+SHIFT+ARROW_LEFT,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,前の要素を選択,
-		前の兄弟を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b358e1d,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(ALT+SHIFT+ARROW_LEFT,
-	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,前の要素を選択,
-		前の兄弟を含むように選択を拡張,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c294a17,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-22 00:54:37.278
-!MESSAGE CTRL+SHIFT+ARROW_DOWN の競合が発生しました:
-Binding(CTRL+SHIFT+ARROW_DOWN,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,次のメンバーへジャンプ,
-		コンパイル単位の次のメンバーにキャレットを移動,
-		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@246324d7,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.jdt.ui.javaEditorScope,,,system)
-Binding(CTRL+SHIFT+ARROW_DOWN,
-	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,次の兄弟,
-		次の兄弟へジャンプ,
-		Category(org.eclipse.ui.category.edit,編集,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35920655,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
-
-!ENTRY org.eclipse.core.resources 4 568 2018-05-22 00:57:37.470
-!MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
-!STACK 0
-java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (指定されたパスが見つかりません。)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.ui.ide 4 4 2018-05-22 01:52:32.453
+!ENTRY org.eclipse.ui.ide 4 4 2018-06-04 18:20:55.074
 !MESSAGE ワークスペースの保管の問題
 
-!ENTRY org.eclipse.ui.ide 4 1 2018-05-22 01:52:32.454
+!ENTRY org.eclipse.ui.ide 4 1 2018-06-04 18:20:55.075
 !MESSAGE ワークベンチの状態を保管中に問題が発生しました。
-!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-05-22 01:52:32.454
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-06-04 18:20:55.075
 !MESSAGE '/RemoteSystemsTempFiles' のメタデータを書き込みできませんでした。
 !STACK 0
 java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Eclipse_Data\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (指定されたパスが見つかりません。)
@@ -499,7 +299,7 @@ java.io.FileNotFoundException: C:\Users\user\Desktop\wf\working-folder\java\Ecli
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:453)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
 
-!ENTRY org.eclipse.datatools.connectivity 4 10001 2018-05-22 01:52:34.567
+!ENTRY org.eclipse.datatools.connectivity 4 10001 2018-06-04 18:20:57.528
 !MESSAGE 内部エラー - org.eclipse.datatools.connectivity
 !STACK 0
 java.lang.NullPointerException
@@ -511,7 +311,7 @@ java.lang.NullPointerException
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.599
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.585
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -535,43 +335,7 @@ java.lang.NullPointerException
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.601
-!MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:217)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:90)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.executeHandler(SystemControl.java:103)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
-	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
-	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
-	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.602
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.587
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -601,25 +365,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.603
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.589
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -661,25 +413,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.604
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.590
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -733,25 +473,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.606
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.592
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -817,25 +545,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.609
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.594
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -913,25 +629,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.611
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.596
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1021,25 +725,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.613
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.598
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1141,25 +833,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.615
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.600
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1273,25 +953,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.618
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.603
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1417,25 +1085,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.620
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.605
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1573,25 +1229,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.622
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.607
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1741,25 +1385,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.626
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.613
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1921,25 +1553,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.629
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.619
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2113,25 +1733,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.632
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.648
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2317,25 +1925,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.635
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.651
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2533,25 +2129,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.638
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.654
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2761,25 +2345,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.641
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.657
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3001,25 +2573,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.646
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.660
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3253,25 +2813,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.649
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.664
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3517,25 +3065,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.652
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.672
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3793,25 +3329,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.655
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.675
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4081,25 +3605,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.659
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.678
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4381,25 +3893,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.661
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.681
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4693,25 +4193,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.666
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.685
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5017,25 +4505,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.701
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.694
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5353,25 +4829,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.713
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.699
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5701,25 +5165,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.718
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.702
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6061,25 +5513,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.722
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.706
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6433,25 +5873,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.729
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.711
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6817,25 +6245,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.733
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.715
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7213,25 +6629,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.735
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.733
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7621,25 +7025,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.737
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.739
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8041,25 +7433,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.740
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.750
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8473,25 +7853,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.743
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.758
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8917,25 +8285,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.746
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.763
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -9373,25 +8729,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.749
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.768
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -9841,25 +9185,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.751
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.773
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10321,25 +9653,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.753
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.778
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10813,25 +10133,13 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
-	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
-	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
-	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
-	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
-	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
-	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
-	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
 	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.755
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.782
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -11317,6 +10625,498 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
 	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:337)
+	at org.eclipse.datatools.connectivity.internal.ConnectivityPlugin.log(ConnectivityPlugin.java:379)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.close(ManagedConnection.java:329)
+	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.786
+!MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:217)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:90)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.executeHandler(SystemControl.java:103)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
+	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
+	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
+	at org.eclipse.core.internal.runtime.RuntimeLog.logToListeners(RuntimeLog.java:161)
+	at org.eclipse.core.internal.runtime.PlatformLogWriter.logged(PlatformLogWriter.java:103)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.safeLogged(ExtendedLogReaderServiceFactory.java:88)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.logPrivileged(ExtendedLogReaderServiceFactory.java:217)
+	at org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory.log(ExtendedLogReaderServiceFactory.java:189)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
+	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
+	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
 	at org.eclipse.epp.logging.aeri.core.util.Logs.log(Logs.java:142)
 	at org.eclipse.epp.logging.aeri.core.SystemControl.isActive(SystemControl.java:75)
 	at org.eclipse.epp.logging.aeri.core.util.LogListener.logging(LogListener.java:45)
@@ -11335,7 +11135,7 @@ java.lang.NullPointerException
 	at org.eclipse.datatools.connectivity.internal.CloseManagedConnectionJob.run(CloseManagedConnectionJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-05-22 01:52:34.758
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2018-06-04 18:20:57.789
 !MESSAGE AERI failed with an error. Please report this error: null ; バージョン: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException

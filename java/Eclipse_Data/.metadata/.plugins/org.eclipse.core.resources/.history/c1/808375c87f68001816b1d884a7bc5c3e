@@ -1,0 +1,14 @@
+package com.internousdev.miyako.action;
+
+import java.sql.SQLException;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class PurchaceHistoryDetailsAction extends ActionSupport{
+
+	public String execute() throws SQLException {
+	return SUCCESS;
+	}
+
+
+}

@@ -1,0 +1,5 @@
+package com.internousdev.miyako.action;
+
+public class PurchaseHistoryAction {
+
+}

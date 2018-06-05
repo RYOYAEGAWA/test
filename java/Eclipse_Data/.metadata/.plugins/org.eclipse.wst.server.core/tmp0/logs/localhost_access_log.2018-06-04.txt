@@ -18,3 +18,9 @@
 0:0:0:0:0:0:0:1 - - [04/Jun/2018:14:03:27 +0900] "GET /sample-web/images/select.png HTTP/1.1" 404 245
 0:0:0:0:0:0:0:1 - - [04/Jun/2018:14:03:34 +0900] "POST /sample-web/AddCartAction.action HTTP/1.1" 200 4951
 0:0:0:0:0:0:0:1 - - [04/Jun/2018:14:03:35 +0900] "GET /sample-web/images/select.png HTTP/1.1" 404 245
+0:0:0:0:0:0:0:1 - - [04/Jun/2018:17:27:44 +0900] "GET /ecsite/myPage.jsp HTTP/1.1" 200 3087
+127.0.0.1 - - [04/Jun/2018:17:31:52 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [04/Jun/2018:17:31:54 +0900] "GET /miyako/myPage.jsp HTTP/1.1" 200 1727
+0:0:0:0:0:0:0:1 - - [04/Jun/2018:17:39:22 +0900] "GET /miyako/myPage.jsp HTTP/1.1" 200 646
+0:0:0:0:0:0:0:1 - - [04/Jun/2018:17:39:26 +0900] "POST /miyako/PurchaceHistoryAction HTTP/1.1" 404 1263
+0:0:0:0:0:0:0:1 - - [04/Jun/2018:17:42:15 +0900] "GET /miyako/myPage.jsp HTTP/1.1" 200 666
